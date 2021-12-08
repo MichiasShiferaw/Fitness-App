@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Deliverable1Fixed</string>
+
+    <string name="member">Member</string>
+    <string name="instructor">Instructor</string>
+
+    <string-array name="fields">
+        <item>day</item>
+        <item>capacity</item>
+        <item>difficultyLevel</item>
+        <item>timeInterval</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Select a day</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="difficultyLevels">
+        <item>Select a difficulty</item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="timeSlots">
+        <item>Select a time slot</item>
+        <item>5:00am - 6:00am</item>
+        <item>6:00am - 7:00am</item>
+        <item>7:00am - 8:00am</item>
+        <item>8:00am - 9:00am</item>
+        <item>9:00am - 10:00am</item>
+        <item>10:00am - 11:00am</item>
+        <item>11:00am - 12:00pm</item>
+        <item>12:00pm - 1:00pm</item>
+        <item>1:00pm - 2:00pm</item>
+        <item>2:00pm - 3:00pm</item>
+        <item>3:00pm - 4:00pm</item>
+        <item>4:00pm - 5:00pm</item>
+        <item>5:00pm - 6:00pm</item>
+        <item>6:00pm - 7:00pm</item>
+        <item>7:00pm - 8:00pm</item>
+        <item>8:00pm - 9:00pm</item>
+        <item>9:00pm - 10:00pm</item>
+        <item>10:00pm - 11:00pm</item>
+        <item>11:00pm - 12:00am</item>
+    </string-array>
+    <string name="title_activity_member_main">MemberMain</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>

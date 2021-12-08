@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.deliverable1fixed">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Deliverable1Fixed">
+        <activity
+            android:name=".MemberUnenrollClasses"
+            android:exported="true" />
+        <activity
+            android:name=".MemberViewClass"
+            android:exported="true" />
+        <activity
+            android:name=".ClassInfo"
+            android:exported="true" />
+        <activity
+            android:name=".MemberMain"
+            android:exported="true" />
+        <activity
+            android:name=".MemberSearchClasses"
+            android:exported="true" />
+        <activity
+            android:name=".FrontScreen"
+            android:exported="true"
+            android:finishOnTaskLaunch="true" />
+        <activity
+            android:name=".InstructorViewClassMembers"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorMain"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorSearchClasses"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorTeachClass"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorEditClasses"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorDeleteClasses"
+            android:exported="true" />
+        <activity
+            android:name=".AdminClass"
+            android:exported="true" />
+        <activity
+            android:name=".AdminAccounts"
+            android:exported="true" />
+        <activity
+            android:name=".AdminMain"
+            android:exported="true" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterUser"
+            android:exported="true" />
+        <activity
+            android:name=".LoadingScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

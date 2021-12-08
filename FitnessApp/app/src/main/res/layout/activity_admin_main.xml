@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMain">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        android:theme="@style/AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/adminBackMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#0ED6B9"
+                android:onClick="onClick"
+                android:text="Back"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/dumbell_purp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="center"
+            android:text="Admin Home"
+            android:textColor="#4A48FF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/adminWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#2B4B73"
+            android:text="Welcome!"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/adminUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#2B4B73"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/adminUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#2B4B73"
+            android:text="Type"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/classes"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2B4B73"
+            android:onClick="onClick"
+            android:text="Classes"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/accounts"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2B4B73"
+            android:onClick="onClick"
+            android:text="Accounts"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

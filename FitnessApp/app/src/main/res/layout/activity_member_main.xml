@@ -1,0 +1,196 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        android:id="@+id/app_bar_member_main"
+        layout="@layout/app_bar_member_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_member_main"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>-->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberMain">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        android:theme="@style/AppBarOverlay">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/memberBackMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B6B8B8"
+                app:cornerRadius="15dp"
+                android:text="Back"
+                android:onClick="onClick"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/dumbell_purp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titlemember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:textColor="#4A48FF"
+            android:fontFamily="@font/quicksand_medium"
+
+            android:gravity="center"
+            android:text="Member Home"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/memberWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Welcome!"
+            android:textColor="#2B4B73"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/memberUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#2B4B73"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/memberUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Type"
+            android:textSize="20sp"
+            android:textColor="#2B4B73"
+            android:textStyle="italic" />
+        <Button
+            android:id="@+id/memberSearchClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="Search classes"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/memberMyViewClassBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="Enroll Into Classes"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--<Button
+            android:id="@+id/memberTeachClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="Teach a class"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/memberEditClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="Edit class"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />-->
+        <Button
+            android:id="@+id/memberUnenrollClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="View/UnEnroll class"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="234dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dbpress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

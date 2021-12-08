@@ -1,0 +1,153 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructorMain">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        android:theme="@style/AppBarOverlay">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/instructorBackMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#0ED6B9"
+                android:text="Back"
+                android:onClick="onClick"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="139dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/dumbell_purp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleInstructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:textColor="#4A48FF"
+            android:fontFamily="@font/quicksand_medium"
+
+            android:gravity="center"
+            android:text="Instructor Home"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/instructorWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Welcome!"
+            android:textColor="#2B4B73"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/instructorUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#2B4B73"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/instructorUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Type"
+            android:textSize="20sp"
+            android:textColor="#2B4B73"
+            android:textStyle="italic" />
+        <Button
+            android:id="@+id/instructorSearchClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="Search classes"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/instructorViewClassMembersBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="View class members"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/instructorTeachClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="Teach a class"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/instructorEditClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="Edit class"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/instructorDeleteClassesBtn"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#8CA4C3"
+            android:onClick="onClick"
+            android:text="delete class"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
