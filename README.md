@@ -1,5 +1,5 @@
-# Fitness-App
+# Fitness-App <br/>
 
-Firebase
-Android Studio
+Firebase <br/>
+Android Studio <br/>
 Java
